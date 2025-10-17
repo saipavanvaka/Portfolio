@@ -1,59 +1,109 @@
+/* General Body */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
+/* Header */
 header {
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #ffdd59;
+}
+
+/* Sections */
 section {
-  margin: 40px;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Section Titles */
 h2 {
-  color: #007bff;
+    color: #2575fc;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 5px;
 }
 
+/* Projects */
 .project {
-  margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
+.project a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #2575fc;
+}
+
+/* Footer */
 footer {
-  background: #007bff;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 40px;
+    background: #2575fc;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 40px;
 }
 
-a:hover {
-  text-decoration: underline;
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
 }
